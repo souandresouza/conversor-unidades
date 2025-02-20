@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <form id="converter-form">
+            <label for="metros">Metros (m):</label>
+            <input type="number" id="metros" placeholder="Metros" min="0">
+
+            <label for="centimetros">Centímetros (cm):</label>
+            <input type="number" id="centimetros" placeholder="Centímetros" min="0">
+
+            <label for="pixels">Pixels (px):</label>
+            <input type="number" id="pixels" placeholder="Pixels" min="0">
+
+            <label for="dpi">DPI:</label>
+            <input type="number" id="dpi" placeholder="DPI" value="300" min="1">
+
+            <label>
+                <input type="checkbox" id="auto-dpi"> Usar DPI automático (72 DPI)
+            </label>
+
+            <button type="button" onclick="converterUnidades()">Converter</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
